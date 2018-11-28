@@ -1,0 +1,594 @@
+{
+  "n": "YOUR_DEVICE_NAME",
+  "version": "0.0.1",
+  "vid": "",
+  "mnmn": "",
+  "language": [
+    {
+      "locale": "en_US",
+      "version": "0.0.1",
+      "poCodes": [
+        {
+          "po": "___PO_CODE_POWERSWITCH_ON",
+          "label": "On"
+        },
+        {
+          "po": "___PO_CODE_POWERSWITCH_OFF",
+          "label": "Off"
+        },
+        {
+          "po": "___PO_CODE_POWERSWITCH",
+          "label": "Power"
+        },
+        {
+          "label": "Command",
+          "po": "___PO_CODE_AUDIOVOLUME_COMMAND"
+        },
+        {
+          "label": "Increase",
+          "po": "___PO_CODE_AUDIOVOLUME_INCREASE"
+        },
+        {
+          "label": "Decrease",
+          "po": "___PO_CODE_AUDIOVOLUME_DECREASE"
+        },
+        {
+          "label": "Max",
+          "po": "___PO_CODE_AUDIOVOLUME_MAX"
+        },
+        {
+          "label": "Min",
+          "po": "___PO_CODE_AUDIOVOLUME_MIN"
+        },
+        {
+          "label": "Volume",
+          "po": "___PO_CODE_AUDIOVOLUME_VOLUME"
+        },
+        {
+          "label": "Mute",
+          "po": "___PO_CODE_AUDIOVOLUME_MUTE"
+        },
+        {
+          "label": "Unmute",
+          "po": "___PO_CODE_AUDIOVOLUME_UNMUTE"
+        },
+        {
+          "label": "Volume",
+          "po": "___PO_CODE_AUDIOVOLUME_MUTE_ACTION"
+        },
+        {
+          "label": "Motion sensor",
+          "po": "___PO_CODE_MOTIONSENSOR"
+        },
+        {
+          "label": "No motion",
+          "po": "___PO_CODE_MOTIONSENSOR_NO_MOTION"
+        },
+        {
+          "label": "Motion detected",
+          "po": "___PO_CODE_MOTIONSENSOR_MOTION_DETECTED"
+        },
+        {
+          "label": "Dimmer",
+          "po": "___PO_CODE_SWITCHLEVEL_DIMMING"
+        }
+      ],
+      "mnmn": "",
+      "vid": ""
+    }
+  ],
+  "ma": [
+    {
+      "name": "PowerSwitch",
+      "type": "main",
+      "order": 1,
+      "link": {
+        "href": "/capability/switch/main/0",
+        "if": "oic.if.a",
+        "rt": "x.com.st.powerswitch"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_power_switch"
+      },
+      "property": "power",
+      "controlType": "ToggleSwitch",
+      "alternatives": [
+        {
+          "key": "on",
+          "value": "___PO_CODE_POWERSWITCH_ON"
+        },
+        {
+          "key": "off",
+          "value": "___PO_CODE_POWERSWITCH_OFF",
+          "type": "inactive"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_POWERSWITCH"
+      },
+      "emphasis": false
+    }
+  ],
+  "ms": [
+    {
+      "name": "PowerSwitch",
+      "type": "device",
+      "order": 1,
+      "label": {
+        "label": "<var1>",
+        "arguments": [
+          {
+            "n": "var1",
+            "href": "/capability/switch/main/0",
+            "property": "power",
+            "valueType": null,
+            "alternatives": [
+              {
+                "key": "on",
+                "value": "___PO_CODE_POWERSWITCH_ON"
+              },
+              {
+                "key": "off",
+                "value": "___PO_CODE_POWERSWITCH_OFF",
+                "type": "inactive"
+              }
+            ]
+          }
+        ]
+      },
+      "emphasis": false
+    }
+  ],
+  "dpInfo": [
+    {
+      "os": "android",
+      "dpType": "vendorPlugIn",
+      "dpUri": "wwst://iot2018"
+    },
+    {
+      "os": "ios",
+      "dpType": "vendorPlugIn",
+      "dpUri": "wwst://iot2018"
+    }
+  ],
+  "dpResources": [
+    {
+      "name": "PowerSwitch",
+      "controllable": true,
+      "order": 1,
+      "link": {
+        "href": "/capability/switch/main/0",
+        "if": "oic.if.a",
+        "rt": "x.com.st.powerswitch"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_power_switch"
+      },
+      "property": "power",
+      "controlType": "ToggleSwitch",
+      "alternatives": [
+        {
+          "key": "on",
+          "value": "___PO_CODE_POWERSWITCH_ON"
+        },
+        {
+          "key": "off",
+          "value": "___PO_CODE_POWERSWITCH_OFF",
+          "type": "inactive"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_POWERSWITCH"
+      },
+      "emphasis": true,
+      "ruleEvent": false,
+      "ruleAction": true
+    },
+    {
+      "name": "PowerSwitch",
+      "controllable": true,
+      "order": 2,
+      "link": {
+        "href": "/capability/switch/main/0",
+        "if": "oic.if.a",
+        "rt": "x.com.st.powerswitch"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_power_switch"
+      },
+      "property": "power",
+      "controlType": "ToggleSwitch",
+      "alternatives": [
+        {
+          "key": "on",
+          "value": "___PO_CODE_POWERSWITCH_ON"
+        },
+        {
+          "key": "off",
+          "value": "___PO_CODE_POWERSWITCH_OFF",
+          "type": "inactive"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_POWERSWITCH"
+      },
+      "emphasis": true,
+      "ruleEvent": false,
+      "ruleAction": false
+    },
+    {
+      "name": "PowerSwitch",
+      "controllable": true,
+      "order": 3,
+      "link": {
+        "href": "/capability/switch/main/0",
+        "if": "oic.if.a",
+        "rt": "x.com.st.powerswitch"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_power_switch"
+      },
+      "property": "power",
+      "controlType": "ToggleSwitch",
+      "alternatives": [
+        {
+          "key": "on",
+          "value": "___PO_CODE_POWERSWITCH_ON"
+        },
+        {
+          "key": "off",
+          "value": "___PO_CODE_POWERSWITCH_OFF",
+          "type": "inactive"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_POWERSWITCH"
+      },
+      "emphasis": true,
+      "ruleEvent": true,
+      "ruleAction": false
+    },
+    {
+      "controlType": "List",
+      "name": "Audio Volume Command",
+      "controllable": true,
+      "property": "command",
+      "emphasis": false,
+      "link": {
+        "rt": "x.com.st.audiovolume",
+        "href": "/capability/audioVolume/main/0",
+        "if": "oic.if.a"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_audio_volume"
+      },
+      "alternatives": [
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_INCREASE",
+          "key": "increase"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_DECREASE",
+          "key": "decrease"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MAX",
+          "key": "max"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MIN",
+          "key": "min"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_AUDIOVOLUME_COMMAND",
+        "n": "Audio Volume Command"
+      },
+      "ruleEvent": false,
+      "ruleAction": false,
+      "order": 4
+    },
+    {
+      "controlType": "List",
+      "name": "Audio Volume Command",
+      "controllable": true,
+      "property": "command",
+      "emphasis": false,
+      "link": {
+        "rt": "x.com.st.audiovolume",
+        "href": "/capability/audioVolume/main/0",
+        "if": "oic.if.a"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_audio_volume"
+      },
+      "alternatives": [
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_INCREASE",
+          "key": "increase"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_DECREASE",
+          "key": "decrease"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MAX",
+          "key": "max"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MIN",
+          "key": "min"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_AUDIOVOLUME_COMMAND",
+        "n": "Audio Volume Command"
+      },
+      "ruleEvent": false,
+      "ruleAction": true,
+      "order": 5
+    },
+    {
+      "controlType": "List",
+      "name": "Audio Volume Command",
+      "controllable": true,
+      "property": "command",
+      "emphasis": false,
+      "link": {
+        "rt": "x.com.st.audiovolume",
+        "href": "/capability/audioVolume/main/0",
+        "if": "oic.if.a"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_audio_volume"
+      },
+      "alternatives": [
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_INCREASE",
+          "key": "increase"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_DECREASE",
+          "key": "decrease"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MAX",
+          "key": "max"
+        },
+        {
+          "value": "___PO_CODE_AUDIOVOLUME_MIN",
+          "key": "min"
+        }
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_AUDIOVOLUME_COMMAND",
+        "n": "Audio Volume Command"
+      },
+      "ruleEvent": true,
+      "ruleAction": false,
+      "order": 6
+    },
+    {
+      "controlType": "slider",
+      "name": "Audio Volume",
+      "controllable": true,
+      "property": "volume",
+      "emphasis": false,
+      "link": {
+        "rt": "x.com.st.audiovolume",
+        "href": "/capability/audioVolume/main/0",
+        "if": "oic.if.a"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_audio_volume"
+      },
+      "range": [
+        0,
+        100
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_AUDIOVOLUME_VOLUME",
+        "n": "Volume"
+      },
+      "ruleEvent": false,
+      "ruleAction": false,
+      "order": 7
+    },
+    {
+      "controlType": "slider",
+      "name": "Audio Volume",
+      "controllable": true,
+      "property": "volume",
+      "emphasis": false,
+      "link": {
+        "rt": "x.com.st.audiovolume",
+        "href": "/capability/audioVolume/main/0",
+        "if": "oic.if.a"
+      },
+      "iconUrl": {
+        "vector": "",
+        "small": "",
+        "large": "",
+        "mid": "icon://ic_function_audio_volume"
+      },
+      "range": [
+        0,
+        100
+      ],
+      "step": 0,
+      "label": {
+        "label": "___PO_CODE_AUDIOVOLUME_VOLUME",
+        "n": "Volume"
+      },
+      "ruleEvent": false,
+      "ruleAction": true,
+      "order": 8
+    },
+    {
+      "ruleAction": false,
+      "emphasis": false,
+      "controllable": false,
+      "step": 0,
+      "link": {
+        "rt": "oic.r.sensor.motion",
+        "href": "/capability/motionSensor/main/0",
+        "if": "oic.if.r"
+      },
+      "controlType": "List",
+      "name": "Motion Sensor",
+      "label": {
+        "label": "___PO_CODE_MOTIONSENSOR",
+        "n": "ST Motion Sensor resource"
+      },
+      "iconUrl": {
+        "mid": "icon://ic_function_motion_sensor",
+        "large": "",
+        "small": "",
+        "vector": ""
+      },
+      "ruleEvent": false,
+      "alternatives": [
+        {
+          "type": "inactive",
+          "value": "___PO_CODE_MOTIONSENSOR_NO_MOTION",
+          "key": "false"
+        },
+        {
+          "value": "___PO_CODE_MOTIONSENSOR_MOTION_DETECTED",
+          "key": "true"
+        }
+      ],
+      "order": 9,
+      "property": "value"
+    },
+    {
+      "ruleAction": false,
+      "emphasis": false,
+      "controllable": false,
+      "step": 0,
+      "link": {
+        "rt": "oic.r.sensor.motion",
+        "href": "/capability/motionSensor/main/0",
+        "if": "oic.if.r"
+      },
+      "controlType": "List",
+      "name": "Motion Sensor",
+      "label": {
+        "label": "___PO_CODE_MOTIONSENSOR",
+        "n": "ST Motion Sensor resource"
+      },
+      "iconUrl": {
+        "mid": "icon://ic_function_motion_sensor",
+        "large": "",
+        "small": "",
+        "vector": ""
+      },
+      "ruleEvent": true,
+      "alternatives": [
+        {
+          "type": "inactive",
+          "value": "___PO_CODE_MOTIONSENSOR_NO_MOTION",
+          "key": "false"
+        },
+        {
+          "value": "___PO_CODE_MOTIONSENSOR_MOTION_DETECTED",
+          "key": "true"
+        }
+      ],
+      "order": 10,
+      "property": "value"
+    },
+    {
+      "ruleAction": true,
+      "controllable": true,
+      "range": [
+        1,
+        100
+      ],
+      "link": {
+        "rt": "oic.r.light.dimming",
+        "href": "/capability/switchLevel/main/0",
+        "if": "oic.if.a"
+      },
+      "step": 0,
+      "controlType": "List",
+      "name": "Switch Level",
+      "label": {
+        "label": "___PO_CODE_SWITCHLEVEL_DIMMING",
+        "n": "st dimming level resource"
+      },
+      "emphasis": false,
+      "ruleEvent": false,
+      "iconUrl": {
+        "mid": "icon://ic_function_light_dimmer",
+        "large": "",
+        "small": "",
+        "vector": ""
+      },
+      "order": 11,
+      "property": "dimmingSetting"
+    },
+    {
+      "ruleAction": false,
+      "controllable": true,
+      "range": [
+        1,
+        100
+      ],
+      "link": {
+        "rt": "oic.r.light.dimming",
+        "href": "/capability/switchLevel/main/0",
+        "if": "oic.if.a"
+      },
+      "step": 0,
+      "controlType": "List",
+      "name": "Switch Level",
+      "label": {
+        "label": "___PO_CODE_SWITCHLEVEL_DIMMING",
+        "n": "st dimming level resource"
+      },
+      "emphasis": false,
+      "ruleEvent": false,
+      "iconUrl": {
+        "mid": "icon://ic_function_light_dimmer",
+        "large": "",
+        "small": "",
+        "vector": ""
+      },
+      "order": 12,
+      "property": "dimmingSetting"
+    }
+  ]
+}

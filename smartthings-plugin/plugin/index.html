@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Stylesheet Template Bulma IO-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Smart Surveillance Camera</title>
+		<link rel="stylesheet" href="css/bulma.min.css">
+		<link rel="stylesheet" href="css/bulma-switch.min.css">
+		<link rel="stylesheet" href="css/helper.css">
+	</head>
+
+	<body>
+		<!-- Action bar-->
+		<div class="columns is-marginless is-mobile" style="background-color:#fafafa;">
+			<div class="column is-narrow">
+				<figure class="image is-24x24 margin-left-s" onclick="backAction()">
+					<img src="res/board_ic_arrow_left.png">
+				</figure>
+			</div>
+		</div>
+
+		<!-- Left -->
+		<div class="dividecolumn leftSide padding-bottom-l border-right" style="background-color:#fafafa;">
+
+			<!-- Header-->
+			<div id="app-title" class="column is-mobile is-paddingless margin-left-l margin-top-s">
+				<div class="has-text-weight-bold has-text-grey-light is-size-7">Tizen IoT</div>
+				<div class="has-text-weight-bold">Smart Surveillance Camera</div>
+			</div>
+			
+			<div class="columns is-mobile is-centered margin-top-m" align="center">
+				<div class="column is-narrow">
+					<div id="camera_controller" data-state="auto_mode_on">
+						<div id="move-up" class="icon-move" onclick="onMoveUpBtnClicked()"></div>
+						<div id="move-left" class="icon-move" onclick="onMoveLeftBtnClicked()"></div>
+						<div id="motion_area" align="center" data-state="no_motion">
+							<p class="is-size-10 has-text-weight-bold"></p>
+						</div>
+						<div id="move-right" class="icon-move" onclick="onMoveRightBtnClicked()"></div>
+						<div id="move-down" class="icon-move" onclick="onMoveDownBtnClicked()"></div>
+						</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Right -->
+		<div class="dividecolumn rightSide">
+			<hr class="is-hidden-tablet" />
+			<!-- Auto Mode Option -->
+			<div class="columns is-mobile is-marginless margin-left-s">
+				<div id="auto_mode" data-state="on" class="column">
+					<p id="mode_name">Auto Control Mode</p>
+					<p class="is-size-7 has-text-info" id="auto_mode_on_text">On</p>
+					<p class="is-size-7 has-text-grey-light" id="auto_mode_off_text">Off</p>
+				</div>
+				<div class="field column margin-top-s">
+					<input type="checkbox" id="auto_mode_check" name="auto_mode_check" class="switch is-rounded is-info" checked="checked" onclick="onModeBtnClicked()">
+					<label class="is-pulled-right" for="auto_mode_check"></label>
+				</div>
+			</div>
+			<hr/>
+		</div>
+	</body>
+
+	<!-- SAMSUNG CONNECT API -->
+	<script type="text/javascript" src="lib/SCPluginApi.js"></script>
+	<script type="text/javascript" src="js/capability_servoMotor.js"></script>
+	<script type="text/javascript" src="js/capability_motionSensor.js"></script>
+	<script type="text/javascript" src="js/capability_modeSwitch.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</html>

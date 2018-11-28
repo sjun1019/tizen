@@ -1,0 +1,21 @@
+{
+	"devices": [
+		{
+			"deviceType": "oic.d.camera",
+			"deviceName": "YOUR-DEVICE-NAME",
+			"mnid": "YOUR-MNID",
+			"vid": "YOUR-VENDER-ID"
+		}
+	],
+	"configuration": {
+		"otm": 2,
+		"otmDescription" : "ownershipTransferMethod : b0001(Random PIN-based), b0010(UserConfirm-based)",
+		"crtType" : 1,
+		"crtDescription" : "certificate type: 1(Test Certificate), 2(Artik Certificate)",
+		"easySetup": {
+			"mode": 1,
+			"modeDescription" : "easysetup mode : 1(SoftAP)",
+			"setupId": "YOUR-SETUP-ID"
+		}
+	}
+}

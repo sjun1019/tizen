@@ -1,0 +1,27 @@
+{
+  "name": "YOUR_DEVICE_NAME",
+  "components": [
+    {
+      "id": "main",
+      "capabilities": [
+        {
+          "id": "switch"
+        },
+        {
+          "id": "audioVolume"
+        },
+        {
+          "id": "motionSensor"
+        },
+        {
+          "id": "switchLevel"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "mnmn": "",
+    "vid": "YOUR_VENDER_ID",
+    "deviceType": "Others"
+  }
+}

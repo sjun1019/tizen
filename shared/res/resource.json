@@ -1,0 +1,105 @@
+{
+	"resources": {
+		"single": [
+			{
+				"uri": "/capability/switch/main/0",
+				"types": [
+					"x.com.st.powerswitch"
+				],
+				"interfaces": [
+					"oic.if.a",
+					"oic.if.baseline"
+				]
+			},
+			{
+				"uri": "/capability/motionSensor/main/0",
+				"types": [
+				  "oic.r.sensor.motion"
+				],
+				"interfaces": [
+				  "oic.if.s",
+				  "oic.if.baseline"
+				]
+			},
+			{
+				"uri": "/capability/switchLevel/main/0",
+				"types": [
+				  "oic.r.light.dimming"
+				],
+				"interfaces": [
+				  "oic.if.a",
+				  "oic.if.baseline"
+				]
+			},
+			{
+				"uri": "/capability/audioVolume/main/0",
+				"types": [
+					"x.com.st.audiovolume"
+				],
+				"interfaces": [
+					"oic.if.a",
+					"oic.if.baseline"
+				]
+			}
+		]
+	},
+	"resourceTypes": [
+		{
+			"type": "x.com.st.powerswitch",
+			"properties": [
+				{
+					"key": "power",
+					"type": "string",
+					"mandatory": true,
+					"description": "State of the power switch.",
+					"enumDescription": ["on", "off"]
+				}
+			]
+		},
+		{
+			"type": "oic.r.sensor.motion",
+			"properties": [
+				{
+					"key": "value",
+					"type": "boolean",
+					"mandatory": true,
+					"description": "motion detect"
+				}
+			]
+		},
+		{
+			"type": "oic.r.light.dimming",
+			"properties": [
+				{
+				"key": "dimmingSetting",
+				"type": "integer",
+				"mandatory": true,
+				"description": "test dimming value."
+				}
+			]
+		},
+		{
+			"type": "x.com.st.audiovolume",
+			"properties": [
+				{
+					"key": "volume",
+					"type": "integer",
+					"mandatory": true,
+					"description": "Volume setting of an audio rendering device."
+				},
+				{
+					"key": "mute",
+					"type": "boolean",
+					"mandatory": true,
+					"description": "Mute setting of an audio rendering device"
+				},
+				{
+					"key": "command",
+					"type": "string",
+					"description": "Comand for controlling",
+					"enumDescription": ["increase", "decrease", "max", "min"]
+				}
+			]
+		}
+	]
+}
